@@ -1,0 +1,55 @@
+* {
+    background: #EFEFFF;
+}
+
+/* For Google Fonts Resources*/
+/* <weight>: Use a value from 200 to 1000 */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.nunito-Nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.raleway-Raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.cabin-Cabin {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+h1 {
+    font-family: Raleway;
+    color: #7C177C;
+}
+
+p {
+    font-family: Nunito;
+}
+
+/* Customization for the Buttons */
+button {
+    background: #00839A;
+    color: #FFFFFF;
+    font-family: Cabin;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #7C177C, #564CAE, #008FDE);
+}
+
+/* Customizing each link in the Navigation Bar */
+.Navigation a {
+    font-family: Cabin;
+}
