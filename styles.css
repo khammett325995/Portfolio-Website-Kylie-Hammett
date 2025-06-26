@@ -32,6 +32,9 @@
 h1 {
     font-family: Raleway;
     color: #7C177C;
+    text-decoration: underline;
+    text-decoration-color: #00AACE;
+    text-decoration-style: wavy;
 }
 
 p {
@@ -42,14 +45,60 @@ p {
 button {
     background: #00839A;
     color: #FFFFFF;
+    text-decoration: none;
     font-family: Cabin;
+}
+
+a {
+    /* Removes the connecting underline between buttons */
+    text-decoration: none;
 }
 
 button:hover {
     background: linear-gradient(90deg, #7C177C, #564CAE, #008FDE);
 }
 
+.Navigation {
+    overflow: hidden;
+}
 /* Customizing each link in the Navigation Bar */
 .Navigation a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 16px;
+    text-decoration: none;
     font-family: Cabin;
+}
+
+.Navigation a.active {
+    background-color: #7C177C;
+    color: white;
+}
+
+.Navigation .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .Navigation a:not(:first-child) {display:none;}
+    .Navigation a.icon {
+        float: right;
+        diaplay: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Navigation.responsive {position: relative;}
+    .Navigation.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .Navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
