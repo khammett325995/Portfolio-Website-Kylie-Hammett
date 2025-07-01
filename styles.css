@@ -49,6 +49,14 @@ p {
     font-family: Nunito;
 }
 
+hr {
+    color: #7C177C;
+    height: 6px;
+    background: linear-gradient(90deg, #7C177C, #564CAE, #008FDE);
+    border: 1px;
+    border-color:#FFFFFF
+}
+
 /* Customization for the Buttons */
 button {
     background: #00839A;
@@ -66,10 +74,6 @@ a {
 
 a:hover {
     color: #008FDE;
-}
-
-a:visited {
-    color: #FFFFFF
 }
 
 button:hover {
@@ -99,7 +103,8 @@ button:hover {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+/* Typically, the max-width is 600 px for a media screen; 300 px is for testing */
+@media screen and (max-width: 300px) {
     .Navigation a:not(:first-child) {display:none;}
     .Navigation a.icon {
         float: right;
@@ -107,7 +112,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
     .Navigation.responsive {position: relative;}
     .Navigation.responsive a.icon {
         position: absolute;
