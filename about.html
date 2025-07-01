@@ -8,6 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+<!-- The Styling Code Needed to Add 2 Elements of Different Types on the Same line-->
+<style>    
+  .wrap {
+    display: flex; /* Makes the 2 elements flex */
+    align-items: baseline; 
+    margin-bottom: 5px; 
+  }
+
+  .wrap h4 {
+    margin: 0; 
+    margin-right: 5px; /* Adds space between the elements */
+  }
+</style>    
 </head>
 <body>
     <!-- Name as the Page Title -->
@@ -27,7 +40,25 @@
         <h2>About</h2>
         <img src="website-images\General Graphics From Canva\Cloud Background Element 1.png" alt="Kylie Hammett Headshot" width="100" height="64" id="Professional Photo"></img>
         <img src="website-images\General Graphics From Canva\Cloud Background Element 1.png" alt="Kylie Hammett Headshot" width="100" height="64" id="Professional Photo"></img>
-        <p></p>
+        <img src="website-images\General Graphics From Canva\Professional Photo No Background.png" alt="Kylie Hammett Headshot" width="220" height="240" id="Professional Photo"></img>
+        <p>My name is Kylie Hammett and I aspire to pursue a career in the technology industry with a focus on both video game and website development. I started college in September 2022 and graduated in June 2025 with a Bachelor of Science in Computer Science and Systems from the University of Washington Tacoma. My current strengths are in full-stack with a focus on frontend coding, Java, HTML, JavaScript, SQL, C, and R and I have strengths in project development, agile methodologies, problem solving, and team collaboration. I’m always curious and willing to learn and I always go into every effort with kindness, calmness, and work as hard as I can to make sure that all objectives and goals can be accomplished.</p>
+        <h4>Listed below are the programming languages, technologies, and frameworks</h4>
+        <div class="wrap">
+            <h4>Learned Programming Languages:</h4>
+            <p>Java, HTML, CSS, Python, Erlang, R, C, C#, SQL, JavaScript, TypeScript</p>
+        </div>
+        <div class="wrap">
+            <h4>Learned Programming Project Frameworks:</h4>
+            <p>Agile Methodologies, Scrum, MVC (Model, View, Controller) Framework, Client-Side and Server-Side</p>
+        </div>
+        <div class="wrap">
+            <h4>Learned Technology Stack Software:</h4>
+            <p>React (Experience in both in React.js and React Native), Next.js, Node.js, Linux, Terminal Coding, Git</p>
+        </div>
+        <div class="wrap">
+            <h4>Learned Software: </h4>
+            <p>Microsoft Office Suite, Google Suite, Notion, AutoDesk Sketchbook, CampusGroups, Canva, LaTEX, jGrasp, IntelliJ, VSCode, GitHub, GitHub Pages, GIMP, itch.io, Ubuntu Virtual Machine, Unity, Godot, LibreSprite, Blender, DaVinci Resolve, MuseScore, MPCBeats, YouTube, Discord, Instagram, LinkedIn, WordPress, Elementor, Docker, Postman, Formik, Yup, Prettier, Figma, Drupal</p>
+        </div>
         <a href="credits.html">Credits of Elements Used to Create this Website</a>
         <p>2025 - Kylie Hammett</p>
 </body>
