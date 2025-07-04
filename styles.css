@@ -1,4 +1,4 @@
-* {
+body {
     background: #EFEFFF;
     font-family: Nunito;
 }
@@ -45,6 +45,15 @@ h2 {
     text-decoration-thickness: 3.5px;
 }
 
+h5 {
+    font-family: Raleway;
+    color: #00839A;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+    font-size: 15px;
+}
+
 p {
     font-family: Nunito;
 }
@@ -80,6 +89,17 @@ button:hover {
     background: linear-gradient(90deg, #7C177C, #564CAE, #008FDE);
 }
 
+.wrap {
+    display: flex; /* Makes the 2 elements flex */
+    align-items: baseline; 
+    margin-bottom: 5px; 
+}
+
+.wrap h4 {
+    margin: 0; 
+    margin-right: 5px; /* Adds space between the elements */
+}
+
 .Navigation {
     overflow: hidden;
 }
@@ -102,6 +122,62 @@ button:hover {
 .Navigation .icon {
     display: none;
 }
+
+.photo {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the gallery divider */
+.photo img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.photo img:hover {
+  opacity: 1;
+}
+
+/* Clear floats that appear naturally after a photo */
+.gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* For expanding a selected image */
+.images-container {
+  position: relative;
+  display: none;
+}
+
+/* A close button to shrink a photo */
+.close-button {
+  position: absolute;
+  top: 2px;
+  right: 15px;
+  color: #7C177C;
+  font-size: 50px;
+  cursor: pointer;
+  /* For a border around the space of the X
+  border: 3px solid black;
+  border-color:#7C177C;
+  */
+}
+
+/* For the horizontal scrolling image gallery
+div.image-gallery {
+    background-color: #333;
+    overflow: scroll;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.image-gallery img {
+    padding: 10px;
+}
+*/
 
 /* Typically, the max-width is 600 px for a media screen; 300 px is for testing */
 @media screen and (max-width: 300px) {

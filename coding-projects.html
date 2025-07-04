@@ -8,18 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-<style>    
-  .wrap {
-    display: flex; /* Makes the 2 elements flex */
-    align-items: baseline; 
-    margin-bottom: 5px; 
-  }
 
-  .wrap h4 {
-    margin: 0; 
-    margin-right: 5px; /* Adds space between the elements */
-  }
-</style>
 </head>
 <body>
     <!-- Name as the Page Title -->
@@ -50,6 +39,10 @@
         </div>
        </div>
         -->
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="website-images\background-music\Portfolio-Website-Lofi.mp3" type="audio/mpeg">
+    </audio>   
         <img src="website-images\General Graphics From Canva\Cloud Background Element 2.png" alt="Cloud" width="100" height="64" id="Horizontal Cloud"></img>
         <h2>Coding Projects</h2>
         <img src="website-images\General Graphics From Canva\Cloud Background Element 2.png" alt="Cloud" width="100" height="64" id="Horizontal Cloud"></img>
@@ -67,13 +60,24 @@
         </div>
         <div class="wrap">
             <h4>Technology Used: </h4>
-            <span>Godot, GDScript, C#, Notion, MPCBeats, Musescore, GarageBand</span>
+            <span>Godot, GDScript, C#, Notion, MPCBeats, Musescore, GarageBand, LibreSprite</span>
         </div>
         <div class="wrap">
             <h4>Challenges & What Was Learned: </h4>
             <p>While this project is in the early stages, currently the main challenge will be learning how to use Godot, how to create a rhythm game, and how to come up with the story of a game as an individual developer. Additionally, this project has the opportunity to expand my music composition and marketing abilities to help in hopefully creating a meaningful game and sharing it with the community.</p>
         </div>
-       </div>
+        <h4>Project Assets/Examples:</h4>
+    <div class="gallery">
+        <div class="photo">
+            <img src="website-images\coding-and-game-design\Harmonious-Aquariums\Harmonious_Aquariums_Main_Character_First_Draft.png" alt="Main Character Initial Sprite" style="width:100%" onclick="imageChange('selected-image', 'imageText', this)">
+        </div>
+    </div>
+<div class="images-container">
+  <span onclick="this.parentElement.style.display='none'" class="close-button">&times;</span>
+  <img id="selected-image" style="width:100%">
+  <div id="imageText"></div>
+</div>
+</div>
        <hr>
        <div class="When the Stars Unfold">
         <h3>When the Stars Unfold</h3>
@@ -103,11 +107,289 @@
         </div>
         <div class="wrap">
             <h4>Description: </h4>
+            <p>With this project, an online bookstore that has both client-side and server-side support is being created to develop a website to look at different books and to give their ratings that have users. This project was created as a part of the TCSS 460: Client/Server Programming for Internet Applications to learn more about creating and implementing a program that has both a server connection and also how a client interacts with the website and that the server can be accessed safely to deliver the information that it needs to.</p>
+        </div>
+        <div class="wrap">
+            <h4>Technology Used: </h4>
+            <p>TypeScript, SQL, React, Node.js, Docker, Postman, Formik, Yup, Prettier, GitHub, VSCode, Figma </p>
+        </div>
+        <div class="wrap">
+            <h4>Challenges and What Was Learned: </h4>
+            <p>The main thing that was learned was in our team of 4, we learned how to work toward a framework of a goal that we ultimately decide for ourselves as we each equally collaborated in the backend and frontend development learning about routing and creating a backend for another group and then creating a frontend off of another group which required communication and also cleaning up code with the warning that it might be in a dirty code state while understanding another group’s project design. </p>
+        </div>
+        <h4>Links to the Project: </h4>
+            <a href="https://github.com/mathewevan/tcss460-front-end"><b>Group Created Frontend Repository</b></a>
             <p></p>
+            <a href="https://github.com/mathewevan/group5-tcss460-web-api"><b>Group Created Backend Respository</b></a>
         </div>
        </div>
        <hr>
+       <div class="Fetchly">
+        <h3>Fetchly</h3>
+        <div class="wrap">
+            <h4>Duration: </h4>
+            <span>May 2025</span>
+        </div>
+        <div class="wrap">
+            <h4>Description: </h4>
+            <p>Fetchly is an app that was created in a team of 4 as a part of the UHackathon 2025 competition and is designed to help people find lost/misplaced items and find better places to store them to prevent misplacing them again. We implemented a cross-platform mobile app using React-native for the frontend, YOLOv8 Convolutional Neural Network for real-time object detection, and a Python Flask API to process images and return detected objects and empty zones. TypeScript for the routes and used Figma to prototype the UX/UI design. In this competition, we won first place in the Experimental project pipeline.</p>
+        </div>
+        <div class="wrap">
+            <h4>Technology Used: </h4>
+            <p>TypeScript, SQL, React Native, YOLOv8 Convolutional Neural Network, Python Flask API, Figma</p>
+        </div>
+        <div class="wrap">
+            <h4>Problems Solved by the Project</h4>
+            <p>The impact of this would be to help people organize their items by showing empty spaces to promote a habit of placing things in areas that are then easy to locate the item again. Additionally, our target audience is the elderly or people who are near-sighted, and using this app will help with locating items that are missing by using image detection, which is utilized by computer vision.</p>
+        </div>
+        <div class="wrap">
+            <h4>Challenges and What Was Learned: </h4>
+            <p> Developing Fetchly has taught my entire team and I have to develop a mobile app, how to continuously learn and adapt especially when building a project in a small amount of time, and how to compete in a hackathon. On a personal level, I have learned about the nature of how it’s important to develop a project if it can help people even if some people to initially have the wrong impression of why you created that project since while the event because it was small-scale was planned for judging to be fully ethical way of everyone is on an equal playing field, anyone even those who worked on the event organization could compete, and with only judges and not competing volunteers only able to know the scores and ranking before the results became public, because my team somehow had good results from the judges to the point of winning a category, it led some people to have the wrong impression initially on our project though my team and I moved forward beyond that as our only focus was on what the project has the potential to do for the community and not on the competition ranking in which everyone was able to eventually see the focus of the project itself.</p>
+        </div>
+        <div class="wrap">
+            <h4>Link to the Project</h4>
+            <a href="https://github.com/MahriYalkapova/UHackathon"><b>Fetchly</b></a>
+        </div>
+<div class="gallery">
+  <p>Shown below are photos from creating Fetchly and with the team presentation photo being taken by Primitivo Bambao: </p>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\fetchly\Fetchly-SQL-Prototype.jpg" alt="SQL Prototype" style="width:100%" onclick="imageChange('selected-image-fetchly', 'imageText-fetchly', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\fetchly\Fetchly-Code-Snippet-1.png" alt="Fetchly Database Creation" style="width:100%" onclick="imageChange('selected-image-fetchly', 'imageText-fetchly', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\fetchly\Fetchly-Code-Snippet-2.png" alt="Post Using the Database" style="width:100%" onclick="imageChange('selected-image-fetchly', 'imageText-fetchly', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\fetchly\Fetchly-Presentation-Photo.jpg" alt="Team Presentation" style="width:100%" onclick="imageChange('selected-image-fetchly', 'imageText-fetchly', this)">
+  </div>
+</div>
+
+<div class="images-container">
+  <span onclick="this.parentElement.style.display='none'" class="close-button">&times;</span>
+  <img id="selected-image-fetchly" style="width:100%">
+  <div id="imageText-fetchly"></div>
+</div>
+       </div>
+       <hr>
+       <div class="Grandmas vs Unhappiness">
+        <h3>Grandmas vs Unhappiness</h3>
+        <div class="wrap">
+            <h4>Duration: </h4>
+            <span>January 2025 to March 2025</span>
+        </div>
+        <div class="wrap">
+            <h4>Description: </h4>
+            <p> Grandmas vs. Unhappiness is a game where you play as Mary Yott and travel with your friends to spread kindness across the world! The game itself is a 2D pixel-art RPG with elements that uses an isometric-chess-based battle system and takes inspiration from games such as Pokémon and Final Fantasy.</p>
+        </div>
+        <div class="wrap">
+            <h4>Project Inspiration: </h4>
+            <p>The original skeleton for this project was forked from this class' game engine skeleton found <a href="https://github.com/algorithm0r/Empty--GameEngine">here</a>. Other inspiration has been taken from the example project given for the TCSS 491 class which can be found <a href="https://github.com/algorithm0r/SuperMarioBros">here</a>.</p>
+        </div>
+        <div class="wrap">
+            <h4>Technology Used: </h4>
+            <p>JavaScript, GitHub, GitHub Pages, Git, VSCode, Microsoft DevTools, DaVinci Resolve</p>
+        </div>
+        <div class="wrap">
+            <h4>The Problem the Project Solves: </h4>
+            <p>This project focused on creating a web-based game from extremely limited resources while learning how to collaboratively develop a project from imagination to full production with a team. Additionally, this project was created as a part of the University of Washington Tacoma’s TCSS 491 Game and Simulation Design course.</p>
+        </div>
+        <div class="wrap">
+            <h4>Challenges and What Was Learned: </h4>
+            <p>From Grandmas vs. Unhappiness, our team learned about how to incorporate expansive ideas on a large-scale project as time limited how far we could expand the game along with how to collaborate when differing ideas to create a cohesive game that encompasses everyone’s ideas. On the other hand, for my role of doing backend and frontend development and music composition, I learned how to program in JavaScript, how to create a web-based program, and how to compose music.</p>
+        </div>
+        <div class="wrap">
+            <h4>Links to the Project: </h4>
+            <a href="https://westerntoad.github.io/tcss491-project/"><b>Play Grandmas vs. Unhappiness Here!</b></a>
+            <p></p>
+            <a href="https://youtu.be/oofsY7V8g94"><b>Grandmas vs. Unhappiness Game Trailer</b></a>
+            <p></p>
+            <a href="https://github.com/westerntoad/tcss491-project/wiki"><b>Wiki for Grandmas vs. Unhappiness</b></a>
+        </div>
+<div class="gallery">
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\grandmas-vs-unhappiness\TCSS-491-Code-Snippet-1.png" alt="Lost Chapters Dialog Code Snippet" style="width:100%" onclick="imageChange('selected-image-g', 'imageText-g', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\grandmas-vs-unhappiness\TCSS-491-Code-Snippet-2.png" alt="Base for Scrapped Card Gameplay Mechanic" style="width:100%" onclick="imageChange('selected-image-g', 'imageText-g', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\grandmas-vs-unhappiness\TCSS-491-Gameplay-1.png" alt="Starting Location" style="width:100%" onclick="imageChange('selected-image-g', 'imageText-g', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\grandmas-vs-unhappiness\TCSS-491-Gameplay-2.png" alt="Story Dialogue Example" style="width:100%" onclick="imageChange('selected-image-g', 'imageText-g', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\grandmas-vs-unhappiness\TCSS-491-Gameplay-3.png" alt="Pause Menu" style="width:100%" onclick="imageChange('selected-image-g', 'imageText-g', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\grandmas-vs-unhappiness\TCSS-491-Gameplay-4.png" alt="Auto Battle System Example" style="width:100%" onclick="imageChange('selected-image-g', 'imageText-g', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\grandmas-vs-unhappiness\TCSS-491-Gameplay-5.png" alt="Party System Example" style="width:100%" onclick="imageChange('selected-image-g', 'imageText-g', this)">
+  </div>  
+</div>
+
+<div class="images-container">
+  <span onclick="this.parentElement.style.display='none'" class="close-button">&times;</span>
+  <img id="selected-image-g" style="width:100%">
+  <div id="imageText-g"></div>
+</div>
+       </div>
+       <hr>
+       <div class="Getting Saucy">
+        <h3>Getting Saucy (a Game Development Club @ UWT Unity Video Game)</h3>
+        <div class="wrap">
+            <h4>Duration: </h4>
+            <p>October 2024 to March 2025</p>
+        </div>
+        <div class="wrap">
+            <h4>Description: </h4>
+            <p>Getting Saucy was created by the Game Development Club at the University of Washington Tacoma and  is a 2D platformer with mouse aiming shooting mechanics with pixel art and a level structure. The main objective is to escape the fridge!</p>
+        </div>
+        <div class="wrap">
+            <h4>Technology Used:</h4>
+            <p>Unity, GitHub, LibreSprite, and GarageBand</p>
+        </div>
+        <div class="wrap">
+            <h4>Challenges and What Was Learned: </h4>
+            <p>As the project lead, besides learning how to use Unity and to create a sketch of a level into a playable level, I also learned how to lead a project where besides the project mission, I also achieved the goal of always having everyone actively learn new skills. Additionally, I also learned how to lead projects for a club as I was both involved as a project lead but because of being the Game Development Club’s President during the project’s duration, I also learned how to be leading the club while making projects to make sure everyone has the support that they need while also expanding my knowledge of technical and soft skills.</p>
+        </div>
+
+<!-- Image Gallery Tabs -->
+<div class="gallery">
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\Getting-Saucy\Unity Game Dev Club Project.png" alt="Gameplay" style="width:100%" onclick="imageChange('selected-image-gamedev', 'imageText-gamedev', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\Getting-Saucy\Unity Game Dev Club Project - Photo 2.png" alt="Unity Development Space Example" style="width:100%" onclick="imageChange('selected-image-gamedev', 'imageText-gamedev', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\Getting-Saucy\Unity Game Dev Club Project - Photo 3.png" alt="Level Map" style="width:100%" onclick="imageChange('selected-image-gamedev', 'imageText-gamedev', this)">
+  </div>
+</div>
+
+<div class="images-container">
+  <span onclick="this.parentElement.style.display='none'" class="close-button">&times;</span>
+  <img id="selected-image-gamedev" style="width:100%">
+  <div id="imageText-gamedev"></div>
+</div>
+
+<hr>
+
+<div class="Dungeon Adventure Hybrid">
+    <h3>Dungeon Adventure Hybrid</h3>
+    <div class="wrap">
+        <h4>Duration: </h4>
+        <p>March 2024 to June 2024</p>
+    </div>
+    <div class="wrap">
+        <h4>Description: </h4>
+        <p> Dungeon Adventure lets you play as a hero of multiple classes such as a warrior, priestess, necromancer, vampire, and thief. Who is on the quest to escape a dungeon while needing to defeat enemies such as ogres, skeletons, gremlins, and dragons while collecting vision, health, armor, and weapon upgrades, and the four Pillars of OO (Abstraction, Encapsulation, Inheritance, and Polymorphism) along the way. Additionally, this project was created as a part of the TCSS 360 Software Development and Quality Assurance Techniques class.</p>
+    </div>
+    <div class="wrap">
+        <h4>Technology Used: </h4>
+        <p>Java, JavaFX, IntelliJ, Git, GitHub</p>
+    </div>
+    <div class="wrap">
+        <h4>Challenges and What Was Learned: </h4>
+        <p>The project taught how to collaborate multiple ideas in a group along with the implementation of multiple design principles both in coding with the MVC (Model, View, Controller) Model, Factory, and Mock Object but also with team development such as with using Agile methodologies and Scrum on the project. Individually, I learned a lot more about backend programming of implementing Object-Oriented Programming principles into creating the objects for each character and leading the UML Diagram design process, leading my team’s frontend, User Experience, and User Interface design and implementation by designing the menus and character select features by learning JavaFX, and learning how to collaborate with my team on implementing backend and frontend code simultaneously as we delegated tasks evenly in the project.</p>
+    </div>
+<div class="gallery">
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\TCSS-360-dungeon-adventure\TCSS 360 UML Diagram Final.png" alt="UML Full Diagram" style="width:100%" onclick="imageChange('selected-image-adventure', 'imageText-adventure', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\TCSS-360-dungeon-adventure\TCSS-360-UML-Partial.png" alt="UML Partial Diagram" style="width:100%" onclick="imageChange('selected-image-adventure', 'imageText-adventure', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\TCSS-360-dungeon-adventure\TCSS 360 Dungeon Adventure Character Select Prototype.png" alt="Character Select Rough Draft" style="width:100%" onclick="imageChange('selected-image-adventure', 'imageText-adventure', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\TCSS-360-dungeon-adventure\TCSS-360-Character-Select-Final-Version.png" alt="Character Select Final Version" style="width:100%" onclick="imageChange('selected-image-adventure', 'imageText-adventure', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\TCSS-360-dungeon-adventure\TCSS-360-Selected-Character.png" alt="Selected a Player Character" style="width:100%" onclick="imageChange('selected-image-adventure', 'imageText-adventure', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\TCSS-360-dungeon-adventure\TCSS-360-Maze.png" alt="Dungeon Maze Example" style="width:100%" onclick="imageChange('selected-image-adventure', 'imageText-adventure', this)">
+  </div>
+  <div class="photo">
+    <img src="website-images\coding-and-game-design\TCSS-360-dungeon-adventure\TCSS-360-Battle.png" alt="Battle Example" style="width:100%" onclick="imageChange('selected-image-adventure', 'imageText-adventure', this)">
+  </div>
+</div>
+
+<div class="images-container">
+  <span onclick="this.parentElement.style.display='none'" class="close-button">&times;</span>
+  <img id="selected-image-adventure" style="width:100%">
+  <div id="imageText-adventure"></div>
+</div>
+
+</div>
+<hr>
+<div class="TMATH 208 Research Project">
+    <h3>Image Edge Detection Techniques</h3>
+    <div class="wrap">
+        <h4>Duration: </h4>
+        <span>January 2024 to March 2024</span>
+    </div>
+    <div class="wrap">
+        <h4>Description: </h4>
+        <p>In this research project, a peer and I worked on researching different image edge detection techniques with the science and math behind them to show how aspects such as Gaussian image blurring can be all-around techniques for image edge detection. The techniques focused on in the paper were of gradient and Gaussian image edge detection techniques through aspects such as convolution. This project was also a way to apply the concepts of Matrix Algebra into as a part of a TMATH 208 Matrix Algebra class.</p>
+    </div>
+    <div class="wrap">
+        <h4>Technology Used: </h4>
+        <p>Python, Juypter Notebook, GitHub</p>
+    </div>
+    <div class="wrap">
+        <h4>Challenges and What Was Learned: </h4>
+        <p>The skills that I learned was about doing research that utilizes developing a program and applying theories and also improving skills in using software such as Jupyter Notebook, Python, and GitHub. The main thing was a challenge was finding the time to do the project as we both ended up having really busy schedules so we had to adapt huge components of this project while actively learning about the topics but we were able to finish the research, create a code example, and also create a research paper report for the project. </p>
+    </div>
+</div>
+
+<hr>
+
+<h2>Past Coding Competitions</h2>
+<p>The following are the past coding competitions that I have competed in up to currently: </p>
+<h4>Puget Sound Programming Competition (PSPC) Spring 2025 (May 3rd, 2025)</h4>
+<h4>Puget Sound Programming Competition (PSPC) Winter 2025 (February 22nd, 2025)</h4>
+<h4>2024 International Collegiate Programming Contest (ICPC) Pacific Northwest Regional Contest - Division I (November 16th, 2024)</h4>
+<ul>
+    <li>For this competition, my team and I decided to compete in the harder division so we could gain experience in more appliactions of algorithms and programming concepts.</li>
+</ul>
+<h4>Puget Sound Programming Competition (PSPC) Spring 2024 (May 4th, 2024)</h4>
+<ul>
+    <li>In this competition, my team of 2 peers and I placed 3rd out of 21 teams.</li>
+</ul>
+<h4>2023 International Collegiate Programming Contest (ICPC) Pacific Northwest Regional Contest - Division II (February 24th, 2024)</h4>
+<h4>Puget Sound Programming Competition (PSPC) Autumn 2023 (October 28th, 2023)</h4>
+<p>For the focus of the Puget Sound Programming Competitions (PSPC) is that it's a programming contest where students from the Puget Sound area form teams of three to solve a series of programming problems in varying difficulty in a four-hour window with focuses on aspects such as working in a team and building up various aspects from programming skills to even a focus on networking and the community.</p>
+<p>For the focus of the International Collegiate Programming Contest (ICPC) as a whole it's in teams of three where you are solving problems and creating solutions while focusing on real-world applications and algorithm design to develop efficient and unqiue solutions while working together as a team.</p>
+
+<script>
+function imageChange(selectedImageId, imageTextId, clickedImg) {
+    var expandImg = document.getElementById(selectedImageId);
+    var imgText = document.getElementById(imageTextId);
+
+    expandImg.src = clickedImg.src;
+    imgText.innerHTML = clickedImg.alt;
+
+    document.getElementById(selectedImageId).parentElement.style.display = "block";
+}
+</script>
+
+
+        <!-- For the horizontal sliding image gallery
+        <div class="image-gallery">
+            <img src="website-images/coding-and-game-design/Getting-Saucy/Unity Game Dev Club Project.png" alt="Gameplay">
+            <img src="website-images\coding-and-game-design\TCSS-360-dungeon-adventure\TCSS 360 Dungeon Adventure Character Select Prototype.png" alt="Test">
+        </div>
+    -->
+       </div>
+    <hr>   
         <a href="credits.html">Credits of Elements Used to Create this Website</a>
         <p>2025 - Kylie Hammett</p>
+<script src="app.js"></script>
 </body>
 </html>
