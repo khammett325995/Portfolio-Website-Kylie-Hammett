@@ -23,23 +23,19 @@
 </head>
 <body>
     <!-- Name as the Page Title -->
-    <h1><a href="index.html">Kylie Hammett</a></h1>
+    <h1><a href="index.html" target="_blank">Kylie Hammett</a></h1>
     <!-- Navigation Bar -->
         <div class="Navigation" id="myNavigation">
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="work-and-volunteer-exp.html">Work & Volunteer Experience</a>
-            <a href="awards.html">Awards</a>
+            <a href="about.html" target="_blank">About</a>
+            <a href="projects.html" target="_blank">Projects</a>
+            <a href="work-and-volunteer-exp.html" target="_blank">Work & Volunteer Experience</a>
+            <a href="awards.html" target="_blank">Awards</a>
         </div>    
         <!-- Future Update: Add Working Sandwhich Menu-->    
         <!-- <a href="javascript:void(0);" class="icon" onclick="menuPopup()">
             <i class="fa fa-bars"></i>
         </a>
     -->
-    <!-- Background Music -->
-    <audio autoplay loop>
-        <source src="website-images\background-music\Portfolio-Website-Lofi.mp3" type="audio/mpeg">
-    </audio>
         <img src="website-images\General Graphics From Canva\Cloud Background Element 2.png" alt="Cloud" width="100" height="64" id="Horizontal Cloud"></img>
         <h2>Web Development Projects</h2>
         <img src="website-images\General Graphics From Canva\Cloud Background Element 2.png" alt="Cloud" width="100" height="64" id="Horizontal Cloud"></img>
@@ -198,7 +194,7 @@
 <hr>
 <div class="RSO Coordinator Events">
   <h3>RSO Coordinator Events</h3>
-  <p><b>Note</b>: This is to focus on the overall event planning process. For more information on other aspects of these events such as marketing, it can be found on the <a href="design-and-marketing.html">Design & Marketing Projects</a> page.</p>
+  <p><b>Note</b>: This is to focus on the overall event planning process. For more information on other aspects of these events such as marketing, it can be found on the <a href="design-and-marketing.html" target="_blank">Design & Marketing Projects</a> page.</p>
 <div class="wrap">
   <h4>Duration of Event Planning: </h4>
   <span>September 2023 to June 2025</span>
@@ -252,16 +248,32 @@
 <hr>
 <div class="UW Tri-Campus Game Jam">
   <h3>UW Tri-Campus Game Jam 2025</h3>
-  <div class="wrap">
     <h4>Event Occured: </h4>
     <ul>
       <li>Event Launch Day: April 10th, 2025 for UW Tacoma</li>
       <li>Coding for the Game Jam Duration: April 9th-17th, 2025 (virtually)</li>
       <li>Game Showcase Day: April 25th, 2025 at UW Seattle</li>
     </ul>
+    <div class="wrap">
+      <h4>Event Planning Duration: </h4>
+      <span>December 2024 to April 2025</span>
+    </div>
+    <div class="wrap">
+      <h4>Description: </h4>
+      <p>The UW Tri-Campus Game Jam involves the Game Development Clubs of the Tacoma, Seattle, and Bothell campuses and UW Tacoma’s Women in Computing Science! The goal is to create an event where students can code in teams of students throughout UW or individually develop a game to both create a project within a time limit and to create new connections in the process. We will have judges from the video game industry deciding who will win the event with a Game Showcase Day at UW Seattle but also with virtual options available so everyone can attend.</p>
+    </div>
+    <div class="wrap">
+      <h4>Technology Used: </h4>
+      <p>itch.io, Unity, Autodesk Sketchbook, Google Suite</p>
+    </div>
+    <div class="wrap">
+      <h4>Challenges and What Was Learned: </h4>
+      <p>From the experience of being the main lead of organizing how the event worked, it taught a lot about communication both with the project development team and also with judges to ensure that the event could go well, especially with one of the judges being able to create a community livestream event showcase of each of the games submitted. Additionally, due to how the event was judged by external judges in industry, I also had the chance to be a design collaborator with four of my friends to create a game called Beat City Blast in which the project taught me about how to manage time and to refine goals so that they can both be ambitious but also realistic even if that means simplifying or continuously changing your initial plans both in ideas for a project and contributions to a group effort as we created a 3D platformer and the group's composer got the game to receive the Best Audio from the judges.</p>
+    </div>
   </div>
 <!-- Placeholder! Add RSO Event Photos Later! -->    
- <h3>Note: Add RSO Event Photos Later!</h3> 
+ <h3>Note: Add UW Tri-Campus Game Jam 2025 Photos Later!</h3> 
+ <p>Shown below are photos from the event with photos being from Game Development Club @ UW Seattle, Game Development Club @ UWT, Husky Game Dev, Women in Computing Sciences (WiCS), and the flyer being created by Eva Howard</p>
  <div class="gallery">
   <div class="photo">
     <img src="" alt="SQL Prototype" style="width:100%" onclick="imageChange('selected-image-RSO', 'imageText-RSO', this)">
@@ -294,7 +306,16 @@ function imageChange(selectedImageId, imageTextId, clickedImg) {
     document.getElementById(selectedImageId).parentElement.style.display = "block";
 }
 </script>
-        <a href="credits.html">Credits of Elements Used to Create this Website</a>
-        <p>2025 - Kylie Hammett</p>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const backgroundAudio = document.getElementById('websiteMusic');
+        if (backgroundAudio) { 
+            backgroundAudio.volume = 0.25; 
+        }
+    });
+</script>
+        <a href="credits.html" target="_blank">Credits of Elements Used to Create this Website</a>
+        <p style="text-align: center;">2025 - Kylie Hammett</p>
 </body>
 </html>
