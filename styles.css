@@ -45,6 +45,13 @@ h2 {
     text-decoration-thickness: 3.5px;
 }
 
+h3 {
+    color: #00839A;
+    text-decoration: underline;
+    text-decoration-color: #7C177C;
+    text-decoration-thickness: 2.5px;
+}
+
 h5 {
     font-family: Raleway;
     color: #00839A;
@@ -93,7 +100,7 @@ button:hover {
 }
 
 .wrap {
-    display: flex; /* Makes the 2 elements flex */
+    display: flex;
     align-items: baseline; 
     margin-bottom: 5px; 
 }
@@ -135,7 +142,7 @@ button:hover {
 
 /* Style the images inside the gallery divider */
 .photo img {
-  opacity: 0.8; 
+  opacity: 0.5; 
   cursor: pointer; 
 }
 
@@ -155,8 +162,8 @@ button:hover {
   position: relative;
   display: none;
   align-items: center;
-  max-width: 30%;
-  max-height: 30%;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 /* A close button to shrink a photo */
