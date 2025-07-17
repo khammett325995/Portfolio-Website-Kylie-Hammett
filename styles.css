@@ -198,7 +198,7 @@ div.image-gallery img {
     .Navigation a:not(:first-child) {display:none;}
     .Navigation a.icon {
         float: right;
-        diaplay: block;
+        display: block;
     }
 }
 
