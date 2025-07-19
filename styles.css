@@ -198,7 +198,7 @@ div.image-gallery img {
 */
 
 /* Typically, the max-width is 600 px for a media screen; 300 px is for testing */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
     .Navigation a:not(:first-child) {display:none;}
     .Navigation a.icon {
         float: right;
@@ -209,7 +209,7 @@ div.image-gallery img {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
     .Navigation.responsive {position: relative;}
     .Navigation.responsive a.icon {
         position: absolute;
