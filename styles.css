@@ -200,10 +200,7 @@ div.image-gallery img {
         float: right;
         display: block;
     }
-}
-
-@media screen {
-    .object {
+    .resume {
         height: 50%;
     }
 }
