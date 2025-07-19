@@ -205,7 +205,6 @@ div.image-gallery img {
         display: block;
     }
     .resume {
-        min-height: 50%;
         height: auto;
     }
 }
