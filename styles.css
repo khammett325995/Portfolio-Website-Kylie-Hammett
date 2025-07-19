@@ -200,6 +200,9 @@ div.image-gallery img {
         float: right;
         display: block;
     }
+    .object {
+        height: 50%;
+    }
 }
 
 @media screen and (max-width: 300px) {
