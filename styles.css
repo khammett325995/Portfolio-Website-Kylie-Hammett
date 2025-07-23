@@ -37,7 +37,8 @@ h1 {
     color: #7C177C;
     text-decoration: underline;
     text-decoration-color: #00AACE;
-    text-decoration-style: wavy;
+    text-decoration-style: solid;
+    text-decoration-thickness: 6px;
 }
 
 h2 {
