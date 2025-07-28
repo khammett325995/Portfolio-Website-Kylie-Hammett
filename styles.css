@@ -203,12 +203,19 @@ div.image-gallery img {
 
 /* Typically, the max-width is 600 px for a media screen; 300 px is for testing */
 @media screen and (max-width: 600px) {
+    .body {
+        margin-top: 25px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .Navigation a:not(:first-child) {display:none;}
     .Navigation a.icon {
         float: right;
         display: block;
     }
     .resume {
-        height: auto;
+        min-height: 50%;
+        height: 50%;
     }
 }
 
