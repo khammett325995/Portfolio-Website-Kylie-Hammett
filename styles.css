@@ -1,9 +1,9 @@
 body {
     background: #EFEFFF;
     font-family: Nunito;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* For Google Fonts Resources*/
@@ -203,19 +203,12 @@ div.image-gallery img {
 
 /* Typically, the max-width is 600 px for a media screen; 300 px is for testing */
 @media screen and (max-width: 600px) {
-    .body {
-        margin-top: 25px;
-        margin-left: 35px;
-        margin-right: 35px;
-    }
-    .Navigation a:not(:first-child) {display:none;}
     .Navigation a.icon {
         float: right;
         display: block;
     }
     .resume {
-        min-height: 50%;
-        height: 50%;
+        height: auto;
     }
 }
 
