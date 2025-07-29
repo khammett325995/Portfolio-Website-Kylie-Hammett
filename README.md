@@ -20,7 +20,6 @@ This website includes:
 The following technology was used to create the portfolio website: HTML, CSS, JavaScript, VSCode, Figma, GitHub, GitHub Pages
 
 <h2>Credits</h2>
-This repository and the portfolio website itself was created by Kylie Hammett (khammett325995@gmail.com) with the following for asset credits:
 
 The following are the resources used to create this portfolio website.
 
@@ -28,17 +27,25 @@ Fonts:
 https://fonts.google.com/share?selection.family=Cabin:ital,wght@0,400..700;1,400..700|Nunito:ital,wght@0,200..1000;1,200..1000|Raleway:ital,wght@0,100..900;1,100..900
 
 Icons:
-- LinkedIn: https://fontawesome.com/icons/linkedin?f=classic&s=brands
-- GitHub: https://fontawesome.com/icons/github?f=classic&s=brands
+
+LinkedIn:
+https://fontawesome.com/icons/linkedin?f=classic&s=brands
+
+GitHub:
+https://fontawesome.com/icons/github?f=classic&s=brands
 
 Graphics:
-The following images were found as free elements on Canva:
-- Taller Pixelated Cloud Image: https://www.canva.com/graphics/MAFIVhgsM5U/
-- Lower Horizontal Pixelated Cloud Image: https://www.canva.com/graphics/MAFIVk7UXuY/
+The following images in the digital prototype of this website that were found as free elements on Canva:
+
+Taller Pixelated Cloud Image:
+https://www.canva.com/graphics/MAFIVhgsM5U/
+
+Lower Horizontal Pixelated Cloud Image:
+https://www.canva.com/graphics/MAFIVk7UXuY/
 
 Event Images:
-- UHackathon Graphics and Photos: Primitivo M. Bambao IV
-- Tri-Campus Game Jam Graphics: Eva Howard
-- Tri-Campus Game Jam Photos: Tom of the Game Dev Club at UW Seattle
+UHackathon Graphics and Photos: Primitivo M. Bambao IV
+Tri-Campus Game Jam Graphics: Eva Howard
+Tri-Campus Game Jam Photos: Tom of the Game Dev Club at UW Seattle
 
 All other images, assets, and links from team projects have full agreement from the teams and/or organizations involved with the parts that were either made public and portions of the projects that Kylie Hammett developed being what’s in the images. Additionally, for portions of the code, there was debugging with the help of Google Gemini and online resources; however, all code has been integrated and created originally. All other images and resources have been created by Kylie Hammett.
