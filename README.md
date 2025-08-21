@@ -1,7 +1,7 @@
 <h1>Portfolio Website - Kylie Hammett</h1>
 
 <h2>Description</h2>
-This website was developed with the goals of collecting all of the different portfolio-level projects that Kylie Hammett has created and/or collaborated on and am working on creating in the future all into one spot to aid in showcasing what has been learned so far and also my goals both in a career and for my hobbies. Additionally, this website was built completely without a base on purpose to show the creation a web-based project without a template to learn by exploring and creating more about the connection between HTML, CSS, and JavaScript at a deeper level.
+This website was developed from the ground up with the goal of collecting all of the different portfolio-level projects that Kylie Hammett has created and/or collaborated on and am working on creating in the future all into one spot to aid in showcasing what has been learned so far and also my goals both in a career and for my hobbies. Additionally, this website was built completely without a base on purpose to show the creation a web-based project without a template to learn by exploring and creating more about the connection between HTML, CSS, and JavaScript at a deeper level.
 
 <h2>Features</h2> 
 This website includes:
@@ -13,11 +13,11 @@ This website includes:
   - Additional Skills
 - A functioning navigational menu
 - Links that open into new tabs to help in page navigation
-- Background music on non-portfolio pages
+- The website will expereince regular updates throughout the future
 
 <h3>Figma Digital Prototype</h3> https://www.figma.com/design/0cgXGYBemF0rCY2x7Kmu9r/Portfolio-Website-Base-Layout-Wireframe---Kylie-Hammett?node-id=6-20&t=BTBuWzNpisHyvWBx-1
 <h2>Tech Stack</h2>
-The following technology was used to create the portfolio website: HTML, CSS, JavaScript, VSCode, Figma, GitHub, GitHub Pages
+The following technology was used to create the portfolio website: HTML, CSS, JavaScript, VSCode, Figma, GitHub, and GitHub Pages.
 
 <h2>Credits</h2>
 
