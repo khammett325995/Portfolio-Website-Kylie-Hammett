@@ -74,8 +74,8 @@
 <p> </p>
         <div class="wrap">
             <h4>Duration: </h4>
-            <span>January 2025 to March 2025</span>
-        </div>
+            <p>January 2025 to March 2025</p>
+       </div>
         <div class="wrap">
             <h4>Description: </h4>
             <p> Grandmas vs. Unhappiness is a game where you play as Mary Yott and travel with your friends to spread kindness across the world! The game itself is a 2D pixel-art RPG with elements that uses an isometric-chess-based battle system and takes inspiration from games such as Pokémon and Final Fantasy.</p>
@@ -183,6 +183,18 @@
         <a href="credits.html">Credits of Elements Used to Create this Website</a>
         </div>
         <p style="text-align: center;" style="transform: scale(1.75); margin-top: 20px; margin-bottom: 20px;">2025 - Kylie Hammett</p>
+
+<script>
+function imageChange(selectedImageId, imageTextId, clickedImg) {
+    var expandImg = document.getElementById(selectedImageId);
+    var imgText = document.getElementById(imageTextId);
+
+    expandImg.src = clickedImg.src;
+    imgText.innerHTML = clickedImg.alt;
+
+    document.getElementById(selectedImageId).parentElement.style.display = "block";
+}
+</script>
 
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
