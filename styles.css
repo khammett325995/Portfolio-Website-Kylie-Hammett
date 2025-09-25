@@ -141,11 +141,16 @@ button:hover {
     display: none;
 }
 
-.Buttons a {
-    display: block;
+Buttons {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 0 50px;
+    justify-content: center;
+}
+
+.Buttons a {
+    display: block;
+    margin: 0 10px;
 }
 
 .photo {
