@@ -141,6 +141,10 @@ button:hover {
     display: none;
 }
 
+.Buttons a {
+    display: block;
+}
+
 .photo {
   float: left;
   width: 10%;
