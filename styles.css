@@ -143,6 +143,7 @@ button:hover {
 
 .Buttons a {
     display: block;
+    flex-wrap: wrap;
     margin: 0 5px;
 }
 
