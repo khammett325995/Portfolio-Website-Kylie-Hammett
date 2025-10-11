@@ -6,6 +6,40 @@ body {
     margin-right: 50px;
 }
 
+.dark_mode {
+    background: #374955;
+    color: #FFFFFF;
+}
+
+  .dark_mode a {
+    color: #dc7be3;
+  }
+
+  .dark_mode a:hover {
+    color: #76d3f5;
+  }
+
+  .dark_mode h2 {
+    color: #a59ff6;
+  }
+
+  .dark_mode h3 {
+    color: #65ed85;
+    text-decoration-color: #76d3f5;
+  }
+
+  .dark_mode u {
+    text-decoration-color: #76d3f5;
+  }
+
+  .dark_mode h4 {
+    color:#73e7e1;
+  }
+
+  .dark_mode button {
+    background: #5557b3;
+  }
+
 /* For Google Fonts Resources*/
 /* <weight>: Use a value from 200 to 1000 */
 /* <uniquifier>: Use a unique and descriptive class name */
@@ -76,7 +110,7 @@ p {
 hr {
     color: #7C177C;
     height: 6px;
-    background: linear-gradient(90deg, #7C177C, #564CAE, #008FDE);
+    background: linear-gradient(90deg, #952fa7, #564CAE, #00b2de);
     border: 1px;
     border-color:#FFFFFF
 }
@@ -100,11 +134,11 @@ a {
 }
 
 a:hover {
-    color: #008FDE;
+    color: #00b2de;
 }
 
 button:hover {
-    background: linear-gradient(90deg, #7C177C, #564CAE, #008FDE);
+    background: linear-gradient(90deg, #530753, #7C177C, #564CAE, #008FDE, #00b2de);
 }
 
 .wrap {
@@ -139,18 +173,6 @@ button:hover {
 
 .Navigation .icon {
     display: none;
-}
-
-.Buttons {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.Buttons a {
-    display: flex;
-    margin: 0 10px;
 }
 
 .photo {
