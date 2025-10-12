@@ -20,6 +20,7 @@
             <a href="work-and-volunteer-exp.html">Work & Volunteer Experience</a>
             <a href="awards.html">Awards</a>
             <a href="https://drive.google.com/file/d/1_p8PnRws7PueYrmrxo6fEhVTFDGX5m9P/view?usp=sharing" target="_blank">Resume</a>
+            <button style= "margin-top: 12px" onclick="changeModes()">Change Theme!</button>
         </div>    
         <!-- Future Update: Add Working Sandwhich Menu-->    
         <!-- <a href="javascript:void(0);" class="icon" onclick="menuPopup()">
@@ -408,27 +409,6 @@
 <h4>Puget Sound Programming Competition (PSPC) Autumn 2023 (October 28th, 2023)</h4>
 <p>For the focus of the Puget Sound Programming Competitions (PSPC), it is a programming contest where students from the Puget Sound area form teams of three to solve a series of programming problems in varying difficulty in a four-hour window with focuses on aspects such as working in a team and building up various aspects from programming skills to even a focus on networking and the community.</p>
 <p>For the focus of the International Collegiate Programming Contest (ICPC), it is a programming contest that has teams of three where you are solving problems and creating solutions while focusing on real-world applications and algorithm design to develop efficient and unqiue solutions while working together as a team.</p>
-
-<script>
-function imageChange(selectedImageId, imageTextId, clickedImg) {
-    var expandImg = document.getElementById(selectedImageId);
-    var imgText = document.getElementById(imageTextId);
-
-    expandImg.src = clickedImg.src;
-    imgText.innerHTML = clickedImg.alt;
-
-    document.getElementById(selectedImageId).parentElement.style.display = "block";
-}
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const backgroundAudio = document.getElementById('websiteMusic');
-        if (backgroundAudio) { 
-            backgroundAudio.volume = 0.25; 
-        }
-    });
-</script>
 
 
         <!-- For the horizontal sliding image gallery
