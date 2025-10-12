@@ -21,15 +21,17 @@ body {
 
   .dark_mode h2 {
     color: #a59ff6;
+    text-decoration-color: #dc7be3;
   }
 
   .dark_mode h3 {
-    color: #65ed85;
+    color: #a59ff6;
     text-decoration-color: #76d3f5;
+    text-decoration-color: #dc7be3;
   }
 
   .dark_mode u {
-    text-decoration-color: #76d3f5;
+    text-decoration-color: #ffffff;
   }
 
   .dark_mode h4 {
@@ -37,7 +39,7 @@ body {
   }
 
   .dark_mode button {
-    background: #5557b3;
+    background: #6d6fbe;
   }
 
 /* For Google Fonts Resources*/
