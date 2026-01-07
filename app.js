@@ -1,3 +1,23 @@
+function applyTheme() {
+    const savedTheme = localStorage.getItem("theme");    
+    if (savedTheme === "enabled") {
+        document.body.classList.add("dark_mode");
+    }
+}
+
+document.addEventListener('DOMContentLoaded', applyTheme);
+
+function changeModes() {
+  var element = document.body;
+  element.classList.toggle("dark_mode");
+  const yesDark = element.classList.contains("dark_mode");
+  if (!yesDark) {
+    localStorage.setItem("theme", "disabled");
+  } else {
+    localStorage.setItem("theme", "enabled");
+  }
+}
+
 function menuPopup() {
     var menuChange = document.getElementById("myNavigation");
     if (menuChange.className === "Navigation") { 
@@ -33,9 +53,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (backgroundAudio) { 
             backgroundAudio.volume = 0.25; 
         }
-    });
-
-function changeModes() {
-  var element = document.body;
-  element.classList.toggle("dark_mode");
-}
+});
