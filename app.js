@@ -54,3 +54,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
             backgroundAudio.volume = 0.25; 
         }
 });
+
+
+window.addEventListener("load", () => {
+    const fill = document.getElementById("progress-fill");
+    const text = document.getElementById("loading-text");
+    const wrap = document.getElementById("load-animation");
+    let progress = 0;
+    const loadInterval = setInterval(() => {
+        progress += Math.random()*10.12;
+        if (progress >= 100) {
+            progress = 100;
+            clearInterval(loadInterval);
+            setTimeout(() => {
+                wrap.style.opacity="0";
+                setTimeout(() => {
+                    wrap.style.display = "none";
+                }, 800);
+            }, 500);
+        }
+        fill.style.width = progress + "%";
+        text.innerHTML = `Loading Kylie Hammett's Portfolio... ${progress.toFixed(2)}%`;
+    }, 120);
+});
