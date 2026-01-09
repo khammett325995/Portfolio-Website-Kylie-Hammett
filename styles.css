@@ -1,9 +1,6 @@
 body {
     background: #EFEFFF;
     font-family: Nunito;
-    margin-top: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 .dark_mode {
@@ -111,10 +108,10 @@ p {
 
 hr {
     color: #7C177C;
-    height: 6px;
+    height: 10px;
     background: linear-gradient(90deg, #952fa7, #564CAE, #00b2de);
     border: 1px;
-    border-color:#FFFFFF
+    border-color:#FFFFFF;
 }
 
 /* Customization for the Buttons */
@@ -295,6 +292,35 @@ div.image-gallery img {
   text-decoration: underline;
 }
 
+.background-frame {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  aspect-ratio: auto;
+  background-color: #EFEFFF;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-frame::before {
+  content:"";
+  position: fixed;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  background-image: url('website-images/IMG_8439.jpeg');
+  z-index: 2;
+  -webkit-mask-image: radial-gradient(circle, transparent 50%, black 100%);
+  mask-image: radial-gradient(circle, transparent 30%, black 90%);
+  will-change: transform;
+}
+
+body.dark_mode .background-frame {
+    display: none;
+}
 
 @media screen and (max-width: 600px) {
     .Navigation a.icon {
@@ -335,3 +361,15 @@ div.image-gallery img {
     filter: brightness(30%) blur(4%)
   }
 }
+
+@media screen and (max-width: 600px) {
+    .background-frame {
+      width: 95%;
+      aspect-ratio: 4/5;
+    } 
+
+    .background-frame::before {
+      -webkit-mask-image: radial-gradient(circle, transparent 50%, black 110%);
+      mask-image: radial-gradient(circle, transparent 50%, black 110%);
+    }
+  }
