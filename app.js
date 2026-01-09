@@ -77,3 +77,25 @@ window.addEventListener("load", () => {
         text.innerHTML = `Loading Kylie Hammett's Portfolio... ${progress.toFixed(2)}%`;
     }, 120);
 });
+
+document.addEventListener("DOMContentLoaded", ()=> {
+    const frame = document.getElementById('mainFrame');
+    const prefersReducedMotion = windowMedia('(prefers-reduced-motion: reduce)').matches;
+    if (frame) {
+        setTimeout(() => {
+            frame.style.opacity = "1";
+            if (!prefersReducedMotion) {
+                frame.style.transform = "scale(1)";
+            } else {
+                frame.style.transform = "none";
+            }
+        }, 150)
+    }
+});
+
+window.addEventListener('scroll', function() {
+    const scrollContainer = this.document.querySelector('.background-frame');
+    let scrollValue = this.window.scrollY;
+    let movement = scrollValue * -0.15;
+    scrollContainer.style.setProperty('--scroll-offset', movement + 'px');
+});
