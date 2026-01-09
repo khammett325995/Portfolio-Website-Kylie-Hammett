@@ -62,7 +62,7 @@ window.addEventListener("load", () => {
     const wrap = document.getElementById("load-animation");
     let progress = 0;
     const loadInterval = setInterval(() => {
-        progress += Math.random()*10.12;
+        progress += Math.random()*16.12;
         if (progress >= 100) {
             progress = 100;
             clearInterval(loadInterval);
