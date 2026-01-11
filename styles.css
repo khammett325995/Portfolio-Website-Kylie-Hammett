@@ -3,6 +3,14 @@ body {
     font-family: Nunito;
 }
 
+.content-margin {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    z-index: 1;
+}
+
 .dark_mode {
     background: #374955;
     color: #FFFFFF;
