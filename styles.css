@@ -118,6 +118,23 @@ h2 {
     text-decoration-color: #7C177C;
     text-decoration-style: dashed;
     text-decoration-thickness: 3.5px;
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+h2::after {
+  content: var(--reflection-text);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  transform: scaleY(-1);
+  opacity: 0.25;
+  filter: blur(1.5px);
+  mask-image: linear-gradient(to bottom, transparent 20%, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 20%, black 90%);
+  z-index: 11;
+  pointer-events: none;
 }
 
 h3 {
@@ -420,3 +437,14 @@ body.dark_mode .background-frame {
     transform: translateY(20px);
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;
   }
+}
+
+@media screen and (max-width: 600px) {
+  h2::after {
+    transform: scaleY(-0.4) translateU(100px);
+    opacity: 0.15;
+    filter: blur(2px);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 70%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 70%);
+  }
+}
