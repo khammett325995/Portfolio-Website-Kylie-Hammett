@@ -74,6 +74,16 @@ function applyTheme() {
 document.addEventListener('DOMContentLoaded', applyTheme);
 
 /*
+ * This event listener is to help in adding a text reflection effect for the <h2> tags.
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    const header2 = document.querySelectorAll('h2');
+    header2.forEach(h2 => {
+        h2.style.setProperty('--reflection-text', `"${h2.textContent}"`);
+    });
+});
+
+/*
  * This event listener is to help with creating the fade-in and fade-out animations.
  */
 document.addEventListener("DOMContentLoaded", () => {
