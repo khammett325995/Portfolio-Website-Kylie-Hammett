@@ -1,6 +1,7 @@
 body {
     background: #EFEFFF;
     font-family: Nunito;
+    text-size-adjust: 100%;
 }
 
 .content-margin {
@@ -9,6 +10,7 @@ body {
     margin-right: 50px;
     position: relative;
     z-index: 10;
+    text-size-adjust: 100%; 
 }
 
 .reveal {
