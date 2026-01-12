@@ -8,7 +8,19 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     position: relative;
-    z-index: 1;
+    z-index: 10;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .dark_mode {
@@ -399,4 +411,10 @@ body.dark_mode .background-frame {
       -webkit-mask-image: radial-gradient(circle, transparent 50%, black 110%);
       mask-image: radial-gradient(circle, transparent 50%, black 110%);
     }
+  }
+
+@media screen and (max-width: 600px) {
+  .reveal {
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
   }
