@@ -64,7 +64,7 @@ body {
   }
 
   .dark_mode h4 {
-    color:#73e7e1;
+    color: #73e7e1;
   }
 
   .dark_mode button {
@@ -209,6 +209,7 @@ button:hover {
 .wrap h4 {
     margin: 0; 
     margin-right: 5px; /* Adds space between the elements */
+    color: #EFEFFF;
 }
 
 .Navigation {
