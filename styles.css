@@ -13,6 +13,10 @@ body {
     text-size-adjust: 100%; 
 }
 
+.content-margin h4 {
+    color: #EFEFFF;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
